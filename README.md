@@ -41,29 +41,28 @@ This project implements a complete two-way file processing suite for managing st
 ├── PersonTestData.txt      # Sample generated Person CSV dataset
 └── ProductTestData.txt     # Sample generated Product CSV dataset
 
-🚀 How to Run
-Prerequisites
-Java Development Kit (JDK 17 or higher installed)
+---
 
-An IDE such as IntelliJ IDEA or VS Code
+## 🚀 How to Run
 
-Executing the Generators (Writing Data)
-Run PersonGenerator.java or ProductWriter.java.
+### Prerequisites
+* Java Development Kit (JDK 17 or higher installed)
+* An IDE such as IntelliJ IDEA or VS Code
 
-Follow the terminal prompts to enter record details.
+### Executing the Generators (Writing Data)
+1. Run `PersonGenerator.java` or `ProductWriter.java`.
+2. Follow the terminal prompts to enter record details.
+3. Enter the desired output file name (e.g., `PersonTestData.txt`) when prompted.
 
-Enter the desired output file name (e.g., PersonTestData.txt) when prompted.
+### Executing the Readers (Parsing & Displaying Data)
+1. Run `PersonReader.java` or `ProductReader.java`.
+2. A native `JFileChooser` window will pop up.
+3. Select any generated CSV text file to view the aligned tabular output in the console.
 
-Executing the Readers (Parsing & Displaying Data)
-Run PersonReader.java or ProductReader.java.
+---
 
-A native JFileChooser window will pop up.
+## 💡 Key Engineering Takeaways
 
-Select any generated CSV text file to view the aligned tabular output in the console.
-
-💡 Key Engineering Takeaways
-Separation of Concerns: Splitting read and write responsibilities into dedicated classes keeps data access patterns modular and scalable.
-
-Defensive Programming: Handling user input errors at the edge prevents downstream file corruption and application crashes.
-
-Cross-Platform GUI Integration: Leveraging Java Swing components bridges terminal-based business logic with native desktop user interactions.
+* **Separation of Concerns:** Splitting read and write responsibilities into dedicated classes keeps data access patterns modular and scalable.
+* **Defensive Programming:** Handling user input errors at the edge prevents downstream file corruption and application crashes.
+* **Cross-Platform GUI Integration:** Leveraging Java Swing components bridges terminal-based business logic with native desktop user interactions.
